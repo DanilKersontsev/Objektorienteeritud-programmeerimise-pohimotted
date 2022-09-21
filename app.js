@@ -1,41 +1,32 @@
-console.log("Hello world! ")
-// variables
-// string
-let name = 'Danil Kersontsev'
-console.log(typeof name)
-let goodmark = 5
-console.log(goodmark)
-console.log(typeof goodmark)
-let ishere = true
-console.log(ishere)
-console.log(typeof ishere)
-//const
-const surname = 'Kersontsev'
-// surname = "Kersontsev" - error
+let val
 
-const numbers = [1, 2, 3, 4]
-console.log(numbers)
-numbers.push(6)
-console.log(numbers)
+// numbers to string
+val = String(555)
+val = String(4+4)
+val = String(5.8)
 
-//object
-const person = {
-    firstname:'Danil',
-    surname: 'Kersontsev'
-}
 
-console.log(person)
-console.log(typeof person)
-// null
-const airplane = null
-console.log(airplane)
-console.log(typeof airplane)
-//symbol
-const symbol = Symbol()
-console.log(symbol)
-console.log(typeof symbol)
+// to string
+val = String(value)
 
-let test
-console.log(test)
-console.log(typeof test)
+// object to string
+val = String(new Date())
 
+// null to string
+val = String(null)
+val = String([1, 2, 3, 4, 5])
+
+//undefined to string
+val = String(undefined)
+
+val = (true).toString()
+// string to number
+val = Number( 'test')
+val = Number(true)
+// string to number
+val = Number()
+
+//
+val = Number([1, 2, 3])
+
+console.log(val)
