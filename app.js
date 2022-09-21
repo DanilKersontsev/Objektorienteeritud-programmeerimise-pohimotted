@@ -1,32 +1,21 @@
-let val
+const numb1 = 100
+const numb2 = 50
+let result
 
-// numbers to string
-val = String(555)
-val = String(4+4)
-val = String(5.8)
+result = numb1 + numb2
+result = numb1 - numb2
+result = numb1 * numb2
+result = numb1 / numb2
+result = numb1 % numb2
 
+result = Math.PI
+result = Math.round(2.5)
+result = Math.ceil(2.3)
+result = Math.floor(2.8)
+result = Math.sqrt(64)
+result = Math.abs(-3)
+result = Math.pow(3, 2)
 
-// to string
-val = String(value)
+result = Math.round(Math.random() * 11)
 
-// object to string
-val = String(new Date())
-
-// null to string
-val = String(null)
-val = String([1, 2, 3, 4, 5])
-
-//undefined to string
-val = String(undefined)
-
-val = (true).toString()
-// string to number
-val = Number( 'test')
-val = Number(true)
-// string to number
-val = Number()
-
-//
-val = Number([1, 2, 3])
-
-console.log(val)
+console.log(result)
