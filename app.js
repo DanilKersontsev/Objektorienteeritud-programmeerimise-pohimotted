@@ -1,27 +1,19 @@
 const firstname = 'Danil'
 const surname = 'Kersontsev'
+const mail = 'danil.kersontsev@voco.ee'
+const department = 'IKT'
 
-let val = firstname + ' ' + surname
-
-val = 'Danil'
-val += surname
-
-val = firstname.toUpperCase()
-val = surname.toLowerCase()
-
-val = surname[0]
-val = surname.indexOf('e')
-val = surname.lastIndexOf('e')
-
-val = surname.charAt(2)
-val = surname.charAt(surname.length - 1)
-
-val = surname.substring(0, 4)
-val = surname.slice(0, 4)
-val = surname.slice(-3)
-
-const tags = 'JS, HTML, CSS'
-val = tags.split(',')
+let result = '<ul>' +
+    '<li>' + firstname + '</li>' +
+    '<li>' + surname + '</li>' +
+    '<li>' + mail + '</li>' +
+    '<li>' + department + '</li>' +
+    '</ul>'
 
 
-console.log(val[1].trim())
+
+
+
+
+console.log(result)
+document.body.innerHTML = result
