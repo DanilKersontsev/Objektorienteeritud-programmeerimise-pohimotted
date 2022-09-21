@@ -1,19 +1,31 @@
-const firstname = 'Danil'
-const surname = 'Kersontsev'
-const mail = 'danil.kersontsev@voco.ee'
-const department = 'IKT'
+const numbers = [41, 56 ,23 ,44, 36, 5, 31]
 
-let result = '<ul>' +
-    '<li>' + firstname + '</li>' +
-    '<li>' + surname + '</li>' +
-    '<li>' + mail + '</li>' +
-    '<li>' + department + '</li>' +
-    '</ul>'
+const numbers2 = new Array(23, 44, 56, 41, 36, 5)
 
+let val
+val = numbers2.length
 
+val = numbers2[0]
+val = numbers2.indexOf(36)
 
+val = Array.isArray(numbers)
+numbers.pop()
+numbers.push(250)
+numbers.unshift(250)
+numbers.shift()
 
+val = numbers.concat(numbers2)
 
+// vastupid
+val = numbers.sort(function (x, y) {
+    return y - x
 
-console.log(result)
-document.body.innerHTML = result
+})
+
+// väiksemast suuremale
+val = numbers.sort(function (x, y) {
+    return x - y
+
+})
+
+console.log(val)
